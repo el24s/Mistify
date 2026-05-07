@@ -1,0 +1,7 @@
+[submodule "Mistify-frontend"]
+    path = Mistify-frontend
+    url = "git@github.com:yanis26x/Mistify-frontend.git"
+
+[submodule "Mistify-backend"]
+    path = Mistify-backend
+    url = "git@github.com:rym31/Mistify-backend.git"
