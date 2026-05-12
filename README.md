@@ -1,5 +1,6 @@
 # Documentation
-TODOO -> maybe secret implémentation ou autre pour la value/url pour backend accede a la BD
+TODOO -> maybe secret implémentation ou autre pour la value/url pour backend accede a la BD a regarder ici
+    - https://kubernetes.io/docs/concepts/configuration/secret/ 
 
 Configuration
 - lien vers docker compose BD
