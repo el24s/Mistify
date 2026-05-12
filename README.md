@@ -1,4 +1,5 @@
 # Documentation
+TODOO -> maybe secret implémentation ou autre pour la value/url pour backend accede a la BD
 
 Configuration
 - lien vers docker compose BD
