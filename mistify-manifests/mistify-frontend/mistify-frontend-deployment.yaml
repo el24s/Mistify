@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mistify-frontend
+spec:
+  selector:
+    matchLabels:
+      app: mistify-frontend
+  template:
+    metadata:
+      labels:
+        app: mistify-frontend
+    spec:
+      containers:
+        - name: mistify-frontend
+          image: el24ss/mistify-frontend:latest 
+          ports:
+            - containerPort: 80

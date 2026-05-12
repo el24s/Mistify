@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mistify-backend
+spec:
+  selector:
+    matchLabels:
+      app: mistify-backend
+  template:
+    metadata:
+      labels:
+        app: mistify-backend
+    spec:
+      containers:
+        - name: mistify-backend
+          image: el24ss/mistify-backend:latest
+          env:
+            - name: MONGO_URL
+              value: "mongodb://root:password@IP_DE_TA_MACHINE:27017" ##TODOO ou secrets
+          ports:
+            - containerPort: 27017
