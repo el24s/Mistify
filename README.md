@@ -3,9 +3,6 @@ TODOO -> maybe secret implémentation ou autre pour la value/url pour backend ac
     - https://kubernetes.io/docs/concepts/configuration/secret/ 
 
 Configuration
-- lien vers docker compose BD
-    - https://hub.docker.com/_/mongo?xk=ShowRecommendedBadge&xt=Disabled
-
 
 
 Étapes
