@@ -1,9 +1,5 @@
 # Documentation
-TODOO -> maybe secret implémentation ou autre pour la value/url pour backend accede a la BD a regarder ici
-    - https://kubernetes.io/docs/concepts/configuration/secret/ 
-
 Configuration
-
 
 Étapes
 - Lancer la base de données avec la commande
