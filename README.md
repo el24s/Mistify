@@ -2,6 +2,7 @@
 Configuration
 
 Étapes
+- Configurer les variables d'environnements dans le fichier .env
 - Lancer la base de données avec la commande
     - sudo docker compose up -d
     - sudo docker compose down -> pour fermer les containers
