@@ -10,7 +10,7 @@ Configurer les variables d'environnements dans le fichier .env
 Lancer la base de données avec la commande
 ```
 sudo docker compose up -d
-sudo docker compose down -> pour fermer les containers
+sudo docker compose down -> pour fermer les conteneurs
 ```
 Lancer le cluster
 ```
@@ -27,13 +27,13 @@ kubectl delete -f mistify-manifests/mistify-backend/
 Lancer les services avec la commande
 ```
 sudo docker compose up -d
-sudo docker compose down -> pour fermer les containers
+sudo docker compose down -> pour fermer les conteneurs
 ```
 
 ## Tester l'application web
-Rechercher qu'elle port est exposée avec la commande
+Rechercher quel port est exposé avec la commande
 ```
 docker ps
 ```
-Rentre l'adresse ip avec le port exposer pour tester que l'application web est fonctionnelle
-ex. http://10.10.0.123:80      
+Rentre l'adresse ip avec le port exposé pour tester que l'application web est fonctionnel
+ex. http://localhost:80      
