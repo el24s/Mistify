@@ -1,6 +1,8 @@
+version: '3.8'
+
 services:
   db:
-    image: mysql
+    image: mysql:latest
     restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
@@ -11,6 +13,38 @@ services:
       - "3306:3306"
     volumes:
       - db_data:/var/lib/mysql
+    networks:
+      - mistify-net
 
+  mistify-backend:
+    image: rym31/mistify-backend:1.0
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - DB_HOST=db
+      - DB_PORT=3306
+      - DB_USER=${MYSQL_USER}
+      - DB_NAME=${MYSQL_DATABASE}
+      - DB_PASSWORD=${MYSQL_PASSWORD}
+    depends_on:
+      - db
+    networks:
+      - mistify-net
+
+  mistify-frontend:
+    image: el24ss/mistify-frontend:1.6
+    restart: unless-stopped
+    ports:
+      - "5173:80" 
+    depends_on:
+      - mistify-backend
+    networks:
+      - mistify-net
+    
 volumes:
   db_data:
+
+networks:
+  mistify-net:
+    driver: bridge
