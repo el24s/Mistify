@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: mistify-frontend
-          image: el24ss/mistify-frontend:1.3
+          image: el24ss/mistify-frontend:1.5
           ports:
             - containerPort: 80
