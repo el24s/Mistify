@@ -35,5 +35,5 @@ Rechercher quel port est exposé avec la commande
 ```
 docker ps
 ```
-Rentre l'adresse ip avec le port exposé pour tester que l'application web est fonctionnel
+Entrez l'adresse ip avec le port exposé pour tester que l'application web est fonctionnel
 ex. http://localhost:5173      
