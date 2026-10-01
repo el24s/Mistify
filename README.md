@@ -1,6 +1,8 @@
 # Documentation de l'application web Mistify
 Le projet consiste à une application web d'achat de parfums qui agit comme une encyclopédie de parfum où l'on peut laisser des commentaires et faire des demandes d'ajout de parfums.
 
+Les technologies utilisées pour cette application web sont ___NestJS, TypeScript, React, TypeORM, MySQL, Docker et Kubernetes.___
+
 Les répertoires sont : https://github.com/yanis26x/Mistify-frontend.git & https://github.com/rym31/Mistify-backend.git
 
 ## Configuration Base
