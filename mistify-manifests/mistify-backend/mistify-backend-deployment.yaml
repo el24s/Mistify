@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: mistify-backend
-          image: el24ss/mistify-backend:1.3
+          image: rym31/mistify-backend:1.0
           env:
             - name: DB_HOST
               value: "10.10.3.15"
