@@ -33,7 +33,7 @@ services:
       - mistify-net
 
   mistify-frontend:
-    image: el24ss/mistify-frontend:1.6
+    image: el24ss/mistify-frontend:1.5
     restart: unless-stopped
     ports:
       - "5173:80" 
